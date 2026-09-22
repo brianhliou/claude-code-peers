@@ -2,7 +2,7 @@
 
 Three hooks and a measurement script that let concurrent Claude Code sessions on one machine see each other. Measured over thirty days on the machine they were built for: a median of eight sessions alive at once, up to ten in one checkout, and only seven of 297 that ever sent a peer a message. Every piece reads state Claude Code already writes (the session registry, `history.jsonl`, the transcripts) and none adds a field a session has to maintain.
 
-**Write-up:** [Eight Sessions, One Checkout](https://brianhliou.com/posts/eight-sessions-one-checkout/)
+**Write-up:** [Eight Claude Code Sessions, One Checkout](https://brianhliou.com/posts/eight-sessions-one-checkout/)
 
 ## What each piece does
 
