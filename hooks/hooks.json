@@ -1,0 +1,40 @@
+{
+  "description": "claude-code-peers: the same three hooks as the manual settings.json install in the README, with the same matchers and timeouts.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 10,
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/peers.py\" --hook"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/memory_delta.py\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/git_index_guard.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

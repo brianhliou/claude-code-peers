@@ -1,0 +1,13 @@
+{
+  "name": "claude-code-peers",
+  "version": "0.1.0",
+  "description": "Concurrent Claude Code sessions on one machine see each other: live peers and the last finished session at start, memory a peer wrote on each prompt, and a guard against whole-index git while a peer shares the checkout.",
+  "author": {
+    "name": "Brian Liou",
+    "url": "https://brianhliou.com"
+  },
+  "homepage": "https://github.com/brianhliou/claude-code-peers",
+  "repository": "https://github.com/brianhliou/claude-code-peers",
+  "license": "MIT",
+  "keywords": ["sessions", "concurrency", "hooks", "git", "worktree"]
+}

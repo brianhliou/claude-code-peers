@@ -1,0 +1,15 @@
+{
+  "name": "claude-code-peers",
+  "description": "One plugin: claude-code-peers, three hooks that let concurrent Claude Code sessions on one machine see each other.",
+  "owner": {
+    "name": "Brian Liou",
+    "url": "https://github.com/brianhliou"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-peers",
+      "source": "./",
+      "description": "Live peers and the last finished session at start, peer-written memory on each prompt, and a whole-index git guard while a peer shares the checkout."
+    }
+  ]
+}
