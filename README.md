@@ -98,7 +98,7 @@ The guard refuses; it does not lock. A peer's `git reset --hard` still reverts y
 
 ## Status
 
-Built 2026-09-21/22. The claim under test is that showing intent makes sessions talk; baseline is seven sessions sending a message in thirty days, re-measured at the end of October 2026 in the write-up.
+Built 2026-09-21/22. This repository is a snapshot of the hooks as they ran then; the author's machine runs its own copy, which keeps changing and is not synced here. Issues are read, fixes are not promised. The claim under test is that showing intent makes sessions talk; baseline is seven sessions sending a message in thirty days, re-measured at the end of October 2026 in the write-up.
 
 ## License
 
